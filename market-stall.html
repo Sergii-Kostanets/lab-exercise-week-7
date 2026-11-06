@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Student name: Sergii Kostanets -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Stall 14</title>
+    </head>
+    <body>
+        <h1 id="stall-name">Stall 14</h1>
+        <p id="stall-summary">Details to follow.</p>
+        <p>With textContent: <span id="plain-demo"></span></p>
+        <p>With innerHTML: <span id="markup-demo"></span></p>
+        <p><a id="menu-link" href="#">Read the stall menu</a></p>
+        <p id="link-report"></p>
+        <script>
+            // Replace the text of the heading
+            const stallName = document.getElementById('stall-name');
+            stallName.textContent = 'Stall 14: Hartley Honey';
+            // The same string, put on the page in two different ways
+            const offerNote = 'Today: <i>half price</i> on all jars.';
+            const plainDemo = document.getElementById('plain-demo');
+            const markupDemo = document.getElementById('markup-demo');
+            plainDemo.textContent = offerNote;
+            markupDemo.innerHTML = offerNote;
+            
+            // Markup that I wrote myself, so innerHTML is the right tool here
+            const stallSummary = document.getElementById('stall-summary');
+            stallSummary.innerHTML = '<strong>Local honey</strong>: from <em>our own</em> hives.';
+            
+            // Change the attributes of the link
+            const menuLink = document.getElementById('menu-link');
+            menuLink.href = 'https://example.org/stall-menu';
+            menuLink.title = 'Opens the menu in a new tab';
+            menuLink.setAttribute('target', '_blank');
+            menuLink.setAttribute('rel', 'noopener noreferrer');
+            
+            // Read an attribute back
+            const linkReport = document.getElementById('link-report');
+            linkReport.textContent = 'Link goes to ' + menuLink.getAttribute('href');
+        </script>
+    </body>
+</html>

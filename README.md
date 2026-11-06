@@ -96,3 +96,187 @@ replace querySelector from li to .weekend
 ## Validator results
 No errors
 
+# Exercise 2 notes: Changing the content
+
+**Name:** Sergii Kostanets
+
+## market-stall.html
+
+**What the same string looked like through `textContent`, and through `innerHTML`:**
+
+The string `Today: <i>half price</i> on all jars.` appears literally, including
+the `<i>` tags, when assigned through `textContent`. Through `innerHTML`, the
+browser interprets the tags, so “half price” appears in italics.
+
+**When `innerHTML` is the right tool, and when it is not:**
+
+Use `innerHTML` when intentionally inserting trusted HTML markup, as with the
+formatted stall summary. Use `textContent` for plain text, especially for
+untrusted text, because it displays text without interpreting it as HTML.
+
+**The difference between `link.href` and `link.getAttribute('href')`:**
+
+`menuLink.href` returns the link URL as an absolute, resolved URL.
+`menuLink.getAttribute('href')` returns the value written in the `href`
+attribute. In this page, the script sets that attribute to the absolute URL
+`https://example.org/stall-menu`, so both return that URL.
+
+## picnic-list.html
+
+**What the page showed before I added `append`, and why:**
+
+
+**The three steps for a new element:**
+
+
+## Puzzles: my predictions (before opening any page)
+
+**Puzzle 1:**
+
+**Puzzle 2:**
+
+**Puzzle 3:**
+
+**Puzzle 4:**
+
+**Puzzle 5:**
+
+**Puzzle 6:**
+
+**Puzzle 7:**
+
+**Puzzle 8:**
+
+**For each wrong prediction: what the page showed, and why:**
+
+
+## Tickets: what was wrong, and what I changed
+
+**Ticket 1:**
+
+**Ticket 2:**
+
+**Ticket 3:**
+
+**Ticket 4:**
+
+## Validator results
+
+
+# Exercise 3 notes: Events
+
+**Name:** Sergii Kostanets
+
+## cafe-board.html
+
+**What the page did with `showSpecial()` with brackets, and why:**
+
+
+**What happened when the script was in the head, and the Console message:**
+
+
+## lap-log.html
+
+**What the total showed before I used `Number`, and why:**
+
+
+**Why `totalLengths` is declared with `let`, and outside the function:**
+
+
+**What `Number.isNaN` is for:**
+
+
+## name-badge.html
+
+**How the `input` event differs from the `click` event:**
+
+
+## Puzzles: my predictions (before opening any page)
+
+**Puzzle 1:**
+
+**Puzzle 2:**
+
+**Puzzle 3:**
+
+**Puzzle 4:**
+
+**Puzzle 5:**
+
+**Puzzle 6:**
+
+**Puzzle 7:**
+
+**Puzzle 8:**
+
+**For each wrong prediction: what the page showed, and why:**
+
+
+## Tickets: what was wrong, and what I changed
+
+**Ticket 1:**
+
+**Ticket 2:**
+
+**Ticket 3:**
+
+**Ticket 4:**
+
+## Validator results
+
+
+# Exercise 4 notes: Styles
+
+**Name:** Sergii Kostanets
+
+## platform-board.html
+
+**The style attribute I saw in the Elements panel:**
+
+
+**What reloading did to it, and why:**
+
+
+## canteen-menu.html
+
+**The class attribute after each click:**
+
+
+**What happened with the dot in the class name:**
+
+
+**When I would use the `style` property, and when `classList`:**
+
+
+## Puzzles: my predictions (before opening any page)
+
+**Puzzle 1:**
+
+**Puzzle 2:**
+
+**Puzzle 3:**
+
+**Puzzle 4:**
+
+**Puzzle 5:**
+
+**Puzzle 6:**
+
+**Puzzle 7:**
+
+**Puzzle 8:**
+
+**For each wrong prediction: what the page showed, and why:**
+
+
+## Tickets: what was wrong, and what I changed
+
+**Ticket 1:**
+
+**Ticket 2:**
+
+**Ticket 3:**
+
+**Ticket 4:**
+
+## Validator results
