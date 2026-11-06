@@ -60,23 +60,27 @@ the variable needs to be assigned a different value later, as with
 ## Puzzles: my predictions (before opening any page)
 
 **Puzzle 1:**
-
+Changes to Open successfully
 **Puzzle 2:**
-
+Water
+Coffee
+Cocoa
 **Puzzle 3:**
-
+Was: Price: 5 euro
 **Puzzle 4:**
-
+Seats left: 13
 **Puzzle 5:**
-
+Weather report to follow. (Uncaught TypeError: Cannot set properties of null (setting 'textContent') - in the console)
 **Puzzle 6:**
-
+Score: not played yet (Uncaught TypeError: Assignment to constant variable - in the console)
 **Puzzle 7:**
-
+Pass 3, and then i is 3
 **Puzzle 8:**
-
+Pass 3
 **For each wrong prediction: what the page showed, and why:**
-
+Puzzle 7
+Pass 3, and then i is 4
+because the loop increments `i` to 4 before it stops.
 
 ## Tickets: what was wrong, and what I changed
 
