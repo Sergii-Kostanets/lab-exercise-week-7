@@ -85,11 +85,14 @@ because the loop increments `i` to 4 before it stops.
 ## Tickets: what was wrong, and what I changed
 
 **Ticket 1:**
-
+Remove extra s in the ID
 **Ticket 2:**
-
+Move script to the bottom of the body
 **Ticket 3:**
-
+Replace small b to capital B in getElementById
 **Ticket 4:**
+replace querySelector from li to .weekend
 
 ## Validator results
+No errors
+
