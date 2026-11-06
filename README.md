@@ -33,12 +33,29 @@ that single element, so changing its `textContent` changes only that item.
 
 **The Console message when I changed `let` to `const`:**
 
+`Uncaught TypeError: Assignment to constant variable.`
+
+This happens because `freePlots` is declared with `const`, then the script
+tries to assign it a new value with `freePlots = freePlots - 3`. A `const`
+variable cannot be reassigned. The error stops the script at that line, so
+the following line does not update the page and it still says
+`Free plots: unknown`.
 
 **The Console message when I mistyped the id, and what `null` means:**
 
+`Uncaught TypeError: Cannot set properties of null (setting 'textContent')`
+
+I mistyped the id as `'free-plot'` instead of `'free-plots'`. Since no element
+has the id `'free-plot'`, `document.getElementById('free-plot')` returns
+`null`. Here, `null` means that no matching element was found. The next line
+tries to set `textContent` on that `null` value, causing the error and stopping
+the script. The page therefore keeps showing `Free plots: unknown`.
 
 **When I use `const` and when I use `let`:**
 
+Use `const` for a variable whose value will not be reassigned. Use `let` when
+the variable needs to be assigned a different value later, as with
+`freePlots` when its count changes from 12 to 9.
 
 ## Puzzles: my predictions (before opening any page)
 
@@ -72,4 +89,3 @@ that single element, so changing its `textContent` changes only that item.
 **Ticket 4:**
 
 ## Validator results
-

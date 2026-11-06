@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Student name: Sergii Kostanets -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Plot count</title>
+    </head>
+    <body>
+        <h1>Plot count</h1>
+        <p id="free-plots">Free plots: unknown</p>
+        <p id="waiting-list">Waiting list: unknown</p>
+        <script>
+            // Twelve plots are free, and then three are let
+            const freePlotsDisplay = document.getElementById('free-plots');
+            let freePlots = 12;
+            freePlots = freePlots - 3;
+            freePlotsDisplay.textContent = 'Free plots: ' + freePlots;
+            // The size of the waiting list does not change, so it is a const
+            const waitingListDisplay = document.getElementById('waiting-list');
+            const waitingListSize = 7;
+            waitingListDisplay.textContent = 'Waiting list: ' + waitingListSize;
+        </script>
+    </body>
+</html>
