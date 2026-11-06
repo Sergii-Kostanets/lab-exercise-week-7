@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Student name: Sergii Kostanets -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Willow Lane Allotments</title>
+    </head>
+    <body>
+        <h1>Willow Lane Allotments</h1>
+        <p id="opening-days">Open on Saturdays from ten until noon.</p>
+        <ul>
+            <li>Water your plot before nine in the morning.</li>
+            <li class="reminder">Bring your own tools.</li>
+            <li>Take rubbish home with you.</li>
+        </ul>
+        <p id="gate-note">The gate code is on the noticeboard.</p>
+        <script>
+            // Change the opening days
+            const openingDays = document.getElementById('opening-days');
+            openingDays.textContent = 'Open on Saturdays and Sundays from ten until noon.';
+            // The first item in the list
+            const firstRule = document.querySelector('ul li');
+            firstRule.textContent = 'Water your plot before nine, or after six in the evening.';
+            // The item with the class reminder
+            const toolsReminder = document.querySelector('.reminder');
+            toolsReminder.textContent = 'Bring your own tools and a watering can.';
+        </script>
+    </body>
+</html>
