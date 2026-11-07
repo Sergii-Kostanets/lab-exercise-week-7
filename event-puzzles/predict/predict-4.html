@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Student name: write your name here -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puzzle 4</title>
+  </head>
+  <body>
+    <h1>Puzzle 4</h1>
+    <button id="count-button">Count a click</button>
+    <p id="count-display">Clicks: 0</p>
+    <script>
+      // Click the button three times.
+      const countButton = document.getElementById('count-button');
+      const countDisplay = document.getElementById('count-display');
+
+      function countClick() {
+        let clicks = 0;
+        clicks = clicks + 1;
+        countDisplay.textContent = 'Clicks: ' + clicks;
+      }
+
+      countButton.addEventListener('click', countClick);
+    </script>
+  </body>
+</html>

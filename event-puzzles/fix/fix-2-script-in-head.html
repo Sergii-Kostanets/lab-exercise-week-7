@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Student name: write your name here -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opening news</title>
+    <script>
+      const newsButton = document.getElementById('news-button');
+      const newsMessage = document.getElementById('news-message');
+
+      function showNews() {
+        newsMessage.textContent = 'The cafe opens at eight.';
+      }
+
+      newsButton.addEventListener('click', showNews);
+    </script>
+  </head>
+  <body>
+    <h1>Opening news</h1>
+    <button id="news-button">Show the news</button>
+    <p id="news-message">No news yet.</p>
+  </body>
+</html>

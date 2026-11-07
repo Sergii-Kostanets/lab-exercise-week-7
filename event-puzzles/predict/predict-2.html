@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Student name: write your name here -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puzzle 2</title>
+  </head>
+  <body>
+    <h1>Puzzle 2</h1>
+    <button id="wave-button">Wave</button>
+    <p id="wave-message">Nobody has waved yet.</p>
+    <script>
+      // What does the page show as soon as it loads, before any click? What does a click do?
+      const waveButton = document.getElementById('wave-button');
+      const waveMessage = document.getElementById('wave-message');
+
+      function showWave() {
+        waveMessage.textContent = 'Hello from the bridge!';
+      }
+
+      waveButton.addEventListener('click', showWave());
+    </script>
+  </body>
+</html>

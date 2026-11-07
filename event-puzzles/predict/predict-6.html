@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Student name: write your name here -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puzzle 6</title>
+  </head>
+  <body>
+    <h1>Puzzle 6</h1>
+    <label for="amount-input">Amount</label>
+    <input type="text" id="amount-input">
+    <button id="add-button">Add to basket</button>
+    <p id="basket-display">Basket: 10</p>
+    <script>
+      // Type 5 in the box, and click the button twice.
+      const amountInput = document.getElementById('amount-input');
+      const addButton = document.getElementById('add-button');
+      const basketDisplay = document.getElementById('basket-display');
+      let basket = 10;
+
+      function addToBasket() {
+        basket = basket + Number(amountInput.value);
+        basketDisplay.textContent = 'Basket: ' + basket;
+      }
+
+      addButton.addEventListener('click', addToBasket);
+    </script>
+  </body>
+</html>

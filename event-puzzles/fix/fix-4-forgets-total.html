@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Student name: write your name here -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Points board</title>
+  </head>
+  <body>
+    <h1>Points board</h1>
+    <label for="points-input">Points scored</label>
+    <input type="text" id="points-input">
+    <button id="points-button">Add points</button>
+    <p id="points-total">Points: 0</p>
+    <script>
+      const pointsInput = document.getElementById('points-input');
+      const pointsButton = document.getElementById('points-button');
+      const pointsDisplay = document.getElementById('points-total');
+
+      function addPoints() {
+        let points = 0;
+        points = points + Number(pointsInput.value);
+        pointsDisplay.textContent = 'Points: ' + points;
+      }
+
+      pointsButton.addEventListener('click', addPoints);
+    </script>
+  </body>
+</html>

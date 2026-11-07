@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Student name: write your name here -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip of the day</title>
+  </head>
+  <body>
+    <h1>Tip of the day</h1>
+    <button id="tip-button">Show the tip</button>
+    <p id="tip-message">Press the button for a tip.</p>
+    <script>
+      const tipButton = document.getElementById('tip-button');
+      const tipMessage = document.getElementById('tip-message');
+
+      function showTip() {
+        tipMessage.textContent = 'Tip: drink some water.';
+      }
+
+      tipButton.addEventListener('click', showTip());
+    </script>
+  </body>
+</html>

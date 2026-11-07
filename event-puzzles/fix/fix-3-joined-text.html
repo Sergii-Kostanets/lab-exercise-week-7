@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Student name: write your name here -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egg count</title>
+  </head>
+  <body>
+    <h1>Egg count</h1>
+    <label for="egg-input">Eggs collected</label>
+    <input type="text" id="egg-input">
+    <button id="egg-button">Add eggs</button>
+    <p id="egg-total">Eggs: 0</p>
+    <script>
+      const eggInput = document.getElementById('egg-input');
+      const eggButton = document.getElementById('egg-button');
+      const eggTotalDisplay = document.getElementById('egg-total');
+      let eggTotal = 0;
+
+      function addEggs() {
+        eggTotal = eggTotal + eggInput.value;
+        eggTotalDisplay.textContent = 'Eggs: ' + eggTotal;
+      }
+
+      eggButton.addEventListener('click', addEggs);
+    </script>
+  </body>
+</html>

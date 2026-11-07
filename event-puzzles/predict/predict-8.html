@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Student name: write your name here -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puzzle 8</title>
+  </head>
+  <body>
+    <h1>Puzzle 8</h1>
+    <label for="entry-input">Entry</label>
+    <input type="text" id="entry-input">
+    <button id="add-entry-button">Add entry</button>
+    <p id="total-line">Total: 0</p>
+    <p id="message-line"></p>
+    <script>
+      // Type 4 and click. Then type x and click. Then type 6 and click.
+      const entryInput = document.getElementById('entry-input');
+      const addEntryButton = document.getElementById('add-entry-button');
+      const totalLine = document.getElementById('total-line');
+      const messageLine = document.getElementById('message-line');
+      let total = 0;
+
+      function addEntry() {
+        const entry = Number(entryInput.value);
+        if (Number.isNaN(entry)) {
+          messageLine.textContent = 'Not a number';
+          return;
+        }
+        total = total + entry;
+        totalLine.textContent = 'Total: ' + total;
+      }
+
+      addEntryButton.addEventListener('click', addEntry);
+    </script>
+  </body>
+</html>

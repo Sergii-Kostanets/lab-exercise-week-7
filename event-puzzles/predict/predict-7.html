@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Student name: write your name here -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puzzle 7</title>
+  </head>
+  <body>
+    <h1>Puzzle 7</h1>
+    <label for="number-input">Type something</label>
+    <input type="text" id="number-input">
+    <button id="convert-button">Convert</button>
+    <p id="number-display"></p>
+    <script>
+      // Type abc and click. Then empty the box and click again. What does the page show each time?
+      const numberInput = document.getElementById('number-input');
+      const convertButton = document.getElementById('convert-button');
+      const numberDisplay = document.getElementById('number-display');
+
+      function showNumber() {
+        numberDisplay.textContent = 'Number gives: ' + Number(numberInput.value);
+      }
+
+      convertButton.addEventListener('click', showNumber);
+    </script>
+  </body>
+</html>
