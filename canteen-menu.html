@@ -5,8 +5,69 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Canteen menu</title>
+        <style>
+        .menu-item {
+            margin-bottom: 12px;
+            padding: 12px;
+            border: 2px solid gray;
+            background-color: white;
+        }
+
+        .special {
+            border-color: seagreen;
+            background-color: honeydew;
+            font-weight: bold;
+        }
+
+        .sold-out {
+            color: gray;
+            text-decoration: line-through;
+        }
+        </style>
     </head>
     <body>
         <h1>Canteen menu</h1>
+        <p class="menu-item">Soup of the day: pea and mint</p>
+        <p class="menu-item" id="pasta-item">Pasta bake with salad</p>
+        <p class="menu-item" id="curry-item">Vegetable curry</p>
+        <button id="special-button">Toggle the special</button>
+        <button id="sold-out-button">Mark pasta as sold out</button>
+        <button id="back-button">Pasta is back</button>
+        <button id="check-button">Is pasta sold out?</button>
+        <p id="menu-report"></p>
+        <script>
+            const soupItem = document.querySelector('.menu-item');
+            const specialButton = document.getElementById('special-button');
+            
+            function toggleSpecial() {
+                soupItem.classList.toggle('special');
+            }
+
+            specialButton.addEventListener('click', toggleSpecial);
+            
+            const pastaItem = document.getElementById('pasta-item');
+            const soldOutButton = document.getElementById('sold-out-button');
+
+            function markPastaSoldOut() {
+                pastaItem.classList.add('sold-out');
+            }
+
+            soldOutButton.addEventListener('click', markPastaSoldOut);
+            const backButton = document.getElementById('back-button');
+            
+            function bringPastaBack() {
+                pastaItem.classList.remove('sold-out');
+            }
+
+            backButton.addEventListener('click', bringPastaBack);
+            
+            const menuReport = document.getElementById('menu-report');
+            const checkButton = document.getElementById('check-button');
+            function checkPasta() {
+                menuReport.textContent = 'Pasta sold out: ' + pastaItem.classList.contains('sold-out');
+            }
+
+            checkButton.addEventListener('click', checkPasta);
+        </script>
     </body>
 </html>

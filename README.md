@@ -318,12 +318,26 @@ the original file, and the style is only applied again if I click the button.
 
 **The class attribute after each click:**
 
+The soup starts with `class="menu-item"`. Clicking “Toggle the special”
+changes it to `class="menu-item special"`; clicking again toggles it back to
+`class="menu-item"`. The pasta starts with `class="menu-item"`. Clicking
+“Mark pasta as sold out” changes it to `class="menu-item sold-out"`, and
+clicking “Pasta is back” removes `sold-out`, returning it to
+`class="menu-item"`. The check button reports whether the pasta currently
+has the `sold-out` class; it does not change the classes.
 
 **What happened with the dot in the class name:**
 
+The dot is part of CSS selector syntax: `'.menu-item'` tells
+`querySelector` to find an element with the class `menu-item`. It is not part
+of the class name, so `classList.add`, `remove`, `toggle`, and `contains` use
+`'sold-out'` or `'special'` without a dot.
 
 **When I would use the `style` property, and when `classList`:**
 
+I would use the `style` property for a direct, one-off inline style change.
+I would use `classList` to add, remove, or toggle a CSS class when a group of
+styles is defined in a stylesheet and should be reused or switched as a state.
 
 ## Puzzles: my predictions (before opening any page)
 
