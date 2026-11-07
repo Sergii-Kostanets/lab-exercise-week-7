@@ -375,11 +375,15 @@ styles is defined in a stylesheet and should be reused or switched as a state.
 ## Tickets: what was wrong, and what I changed
 
 **Ticket 1:**
+- change letter-spacing to letterSpacing
 
 **Ticket 2:**
+- remove . from shopSign.classList.toggle('.highlighted');
 
 **Ticket 3:**
+- wrap bold in quotes 'bold'
 
 **Ticket 4:**
+- add . to const rotaSign = document.querySelector('notice'); before notice
 
 ## Validator results
