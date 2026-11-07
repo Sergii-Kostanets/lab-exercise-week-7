@@ -61,35 +61,46 @@ the variable needs to be assigned a different value later, as with
 
 **Puzzle 1:**
 Changes to Open successfully
+
 **Puzzle 2:**
-Water
-Coffee
-Cocoa
+- Water
+- Coffee
+- Cocoa
+
 **Puzzle 3:**
 Was: Price: 5 euro
+
 **Puzzle 4:**
 Seats left: 13
+
 **Puzzle 5:**
 Weather report to follow. (Uncaught TypeError: Cannot set properties of null (setting 'textContent') - in the console)
+
 **Puzzle 6:**
 Score: not played yet (Uncaught TypeError: Assignment to constant variable - in the console)
+
 **Puzzle 7:**
 Pass 3, and then i is 3
+
 **Puzzle 8:**
 Pass 3
+
 **For each wrong prediction: what the page showed, and why:**
-Puzzle 7
-Pass 3, and then i is 4
-because the loop increments `i` to 4 before it stops.
+- Puzzle 7
+- Pass 3, and then i is 4
+- because the loop increments `i` to 4 before it stops.
 
 ## Tickets: what was wrong, and what I changed
 
 **Ticket 1:**
 Remove extra s in the ID
+
 **Ticket 2:**
 Move script to the bottom of the body
+
 **Ticket 3:**
 Replace small b to capital B in getElementById
+
 **Ticket 4:**
 replace querySelector from li to .weekend
 
@@ -139,22 +150,36 @@ appear.
 ## Puzzles: my predictions (before opening any page)
 
 **Puzzle 1:**
+Welcome
 
 **Puzzle 2:**
+```Sale: <b>half price</b>```
 
 **Puzzle 3:**
+Sale: <b>half price</b>
 
 **Puzzle 4:**
+- Green
+- Black
 
 **Puzzle 5:**
+- More information
+- Goes to https://example.org/new
 
 **Puzzle 6:**
+- Bread
 
 **Puzzle 7:**
+- Red
+- Green
+- Blue
 
 **Puzzle 8:**
+- One
+- Three
 
 **For each wrong prediction: what the page showed, and why:**
+- All correct
 
 
 ## Tickets: what was wrong, and what I changed
