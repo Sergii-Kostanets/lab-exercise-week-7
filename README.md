@@ -387,3 +387,4 @@ styles is defined in a stylesheet and should be reused or switched as a state.
 - add . to const rotaSign = document.querySelector('notice'); before notice
 
 ## Validator results
+- no errors
