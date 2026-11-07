@@ -294,7 +294,7 @@ Wrap eggInput.value in a Number()
 Move let points = 0; outsite the function, before it
 
 ## Validator results
-
+No errors
 
 # Exercise 4 notes: Styles
 

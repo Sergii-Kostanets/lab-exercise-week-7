@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Student name: write your name here -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puzzle 8</title>
+    <style>
+      .notice {
+        padding: 8px;
+        border: 2px solid gray;
+      }
+
+      .urgent {
+        color: firebrick;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Puzzle 8</h1>
+    <p id="sign" class="notice">Fresh bread today</p>
+    <button id="urgent-button">Mark as urgent</button>
+    <p id="report"></p>
+    <script>
+      // Click the button three times.
+      const sign = document.getElementById('sign');
+      const report = document.getElementById('report');
+      const urgentButton = document.getElementById('urgent-button');
+
+      function toggleUrgent() {
+        sign.classList.toggle('urgent');
+        report.textContent = 'Urgent: ' + sign.classList.contains('urgent');
+      }
+
+      urgentButton.addEventListener('click', toggleUrgent);
+    </script>
+  </body>
+</html>

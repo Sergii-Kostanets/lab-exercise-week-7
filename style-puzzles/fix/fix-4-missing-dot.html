@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Student name: write your name here -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rota notice</title>
+    <style>
+      .notice {
+        padding: 8px;
+        border: 2px solid gray;
+      }
+
+      .highlighted {
+        background-color: lightyellow;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Rota notice</h1>
+    <p id="rota-sign" class="notice">Shop closes at six</p>
+    <button id="rota-button">Mark as important</button>
+    <script>
+      const rotaSign = document.querySelector('notice');
+      const rotaButton = document.getElementById('rota-button');
+
+      function markImportant() {
+        rotaSign.classList.toggle('highlighted');
+      }
+
+      rotaButton.addEventListener('click', markImportant);
+    </script>
+  </body>
+</html>

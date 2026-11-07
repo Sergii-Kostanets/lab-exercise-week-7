@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Student name: write your name here -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Door sign</title>
+  </head>
+  <body>
+    <h1>Door sign</h1>
+    <p id="door-sign" class="notice">Shop closes at six</p>
+    <button id="door-button">Mark as important</button>
+    <script>
+      const doorSign = document.getElementById('door-sign');
+      const doorButton = document.getElementById('door-button');
+
+      function spreadOut() {
+        doorSign.style.letter-spacing = '4px';
+      }
+
+      doorButton.addEventListener('click', spreadOut);
+    </script>
+  </body>
+</html>

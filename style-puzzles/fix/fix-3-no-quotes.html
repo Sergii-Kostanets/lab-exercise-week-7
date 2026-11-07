@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Student name: write your name here -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queue sign</title>
+  </head>
+  <body>
+    <h1>Queue sign</h1>
+    <p id="queue-sign" class="notice">Shop closes at six</p>
+    <button id="queue-button">Mark as important</button>
+    <script>
+      const queueSign = document.getElementById('queue-sign');
+      const queueButton = document.getElementById('queue-button');
+
+      function makeBold() {
+        queueSign.style.fontWeight = bold;
+      }
+
+      queueButton.addEventListener('click', makeBold);
+    </script>
+  </body>
+</html>
