@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Student name: write your name here -->
+    <!-- Student name: Sergii Kostanets -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Points board</title>
@@ -16,9 +16,9 @@
       const pointsInput = document.getElementById('points-input');
       const pointsButton = document.getElementById('points-button');
       const pointsDisplay = document.getElementById('points-total');
-
+      
+      let points = 0;
       function addPoints() {
-        let points = 0;
         points = points + Number(pointsInput.value);
         pointsDisplay.textContent = 'Points: ' + points;
       }

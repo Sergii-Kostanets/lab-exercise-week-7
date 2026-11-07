@@ -249,33 +249,49 @@ so it would not respond to each change in the text unless I clicked something.
 ## Puzzles: my predictions (before opening any page)
 
 **Puzzle 1:**
+Hello from the bridge!
 
 **Puzzle 2:**
+Hello from the bridge! (a click do nothing)
 
 **Puzzle 3:**
+Clicks: 3
 
 **Puzzle 4:**
+Clicks: 1
 
 **Puzzle 5:**
+Basket: 1055
 
 **Puzzle 6:**
+Basket: 20
 
 **Puzzle 7:**
+Number gives: NaN
 
 **Puzzle 8:**
+- 4
+- 4 and line Not a number
+- 10 and line Not a number
 
 **For each wrong prediction: what the page showed, and why:**
+**Puzzle 7:**
+When input is empty it shows Number gives: 0. It looks like epty string "" equals to 0.
 
 
 ## Tickets: what was wrong, and what I changed
 
 **Ticket 1:**
+Remove brackets after the showTip in the event listener
 
 **Ticket 2:**
+Move script from head to bottom of the body
 
 **Ticket 3:**
+Wrap eggInput.value in a Number()
 
 **Ticket 4:**
+Move let points = 0; outsite the function, before it
 
 ## Validator results
 
