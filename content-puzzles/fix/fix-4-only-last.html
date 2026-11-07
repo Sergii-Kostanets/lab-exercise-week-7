@@ -12,8 +12,8 @@
     <script>
       const names = ['Ann', 'Ben', 'Cara'];
       const teamList = document.getElementById('team-list');
-      const nameItem = document.createElement('li');
       for (const name of names) {
+        const nameItem = document.createElement('li');
         nameItem.textContent = name;
         teamList.append(nameItem);
       }

@@ -185,12 +185,16 @@ Sale: <b>half price</b>
 ## Tickets: what was wrong, and what I changed
 
 **Ticket 1:**
+Replace textContent to innerHTML
 
 **Ticket 2:**
+Add dayList.appendChild(dayItem); inside the for loop
 
 **Ticket 3:**
+Add () to oldNotice.remove
 
 **Ticket 4:**
+Move const nameItem = document.createElement('li'); into the for loop
 
 ## Validator results
 
