@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Student name: Sergii Kostanets -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Harbour cafe board</title>
+    </head>
+    <body>
+        <h1>Harbour cafe board</h1>
+        <button id="show-special-button">Show the special</button>
+        <button id="hide-special-button">Hide the special</button>
+        <p id="special-message">Press the button to see the special.</p>
+        <script>
+            const showSpecialButton = document.getElementById('show-special-button');
+            const specialMessage = document.getElementById('special-message');
+            function showSpecial() {
+                specialMessage.textContent = 'Today: leek and potato soup with brown bread.';
+            }
+            showSpecialButton.addEventListener('click', showSpecial);
+            
+            const hideSpecialButton = document.getElementById('hide-special-button');
+            function hideSpecial() {
+                specialMessage.textContent = 'Press the button to see the special.';
+            }
+            hideSpecialButton.addEventListener('click', hideSpecial);
+        </script>
+    </body>
+</html>

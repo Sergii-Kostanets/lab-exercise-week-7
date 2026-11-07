@@ -197,6 +197,7 @@ Add () to oldNotice.remove
 Move const nameItem = document.createElement('li'); into the for loop
 
 ## Validator results
+No errors
 
 
 # Exercise 3 notes: Events
@@ -207,9 +208,15 @@ Move const nameItem = document.createElement('li'); into the for loop
 
 **What the page did with `showSpecial()` with brackets, and why:**
 
+The special appeared as soon as the script ran, before I clicked the button,
+because `showSpecial()` called the function immediately.
 
 **What happened when the script was in the head, and the Console message:**
 
+Nothing happened when I clicked the button because the script ran before the
+browser had read the button. `getElementById` returned `null`, so the Console
+showed: `Uncaught TypeError: Cannot read properties of null (reading
+'addEventListener')`.
 
 ## lap-log.html
 
