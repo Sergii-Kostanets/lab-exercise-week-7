@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Student name: write your name here -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puzzle 7</title>
+  </head>
+  <body>
+    <h1>Puzzle 7</h1>
+    <ul id="colour-list">
+      <li>Red</li>
+    </ul>
+    <script>
+      const colours = ['Green', 'Blue'];
+      const colourList = document.getElementById('colour-list');
+      for (const colour of colours) {
+        const colourItem = document.createElement('li');
+        colourItem.textContent = colour;
+        colourList.append(colourItem);
+      }
+    </script>
+  </body>
+</html>

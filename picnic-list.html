@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Student name: Sergii Kostanets -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Picnic list</title>
+    </head>
+    <body>
+        <h1>Picnic list</h1>
+        <p id="draft-label">Draft: still checking the weather.</p>
+        <ul id="picnic-items"></ul>
+        <script>
+            // Build the list items from an array of foods
+            const foods = ['Sandwiches', 'Apples', 'Lemonade', 'Cake', 'Plates'];
+            const picnicItems = document.getElementById('picnic-items');
+            
+            for (const food of foods) {
+            const listItem = document.createElement('li');
+                listItem.textContent = food;
+                picnicItems.append(listItem);
+            }
+            
+            // The draft label is no longer needed
+            const draftLabel = document.getElementById('draft-label');
+            draftLabel.remove();
+        </script>
+    </body>
+</html>

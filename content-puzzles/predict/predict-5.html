@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Student name: write your name here -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puzzle 5</title>
+  </head>
+  <body>
+    <h1>Puzzle 5</h1>
+    <p><a id="info-link" href="https://example.org/old">More information</a></p>
+    <p id="info-report"></p>
+    <script>
+      const infoLink = document.getElementById('info-link');
+      const infoReport = document.getElementById('info-report');
+      infoLink.setAttribute('href', 'https://example.org/new');
+      infoReport.textContent = 'Goes to ' + infoLink.getAttribute('href');
+    </script>
+  </body>
+</html>

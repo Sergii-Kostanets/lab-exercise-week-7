@@ -125,9 +125,16 @@ attribute. In this page, the script sets that attribute to the absolute URL
 
 **What the page showed before I added `append`, and why:**
 
+The page showed the “Picnic list” heading and the draft label,
+“Draft: still checking the weather.” The list items had been created and
+filled with text, but they were not attached to the page, so they did not
+appear.
 
 **The three steps for a new element:**
 
+1. Create the element with `document.createElement('li')`.
+2. Fill it with text using `listItem.textContent = food`.
+3. Attach it to the list with `picnicItems.append(listItem)`.
 
 ## Puzzles: my predictions (before opening any page)
 

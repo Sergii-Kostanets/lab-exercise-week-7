@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Student name: write your name here -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team list</title>
+  </head>
+  <body>
+    <h1>Team list</h1>
+    <ul id="team-list"></ul>
+    <script>
+      const names = ['Ann', 'Ben', 'Cara'];
+      const teamList = document.getElementById('team-list');
+      const nameItem = document.createElement('li');
+      for (const name of names) {
+        nameItem.textContent = name;
+        teamList.append(nameItem);
+      }
+    </script>
+  </body>
+</html>

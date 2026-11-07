@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Student name: write your name here -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opening days</title>
+  </head>
+  <body>
+    <h1>Opening days</h1>
+    <ul id="day-list"></ul>
+    <script>
+      const days = ['Monday', 'Tuesday', 'Wednesday'];
+      const dayList = document.getElementById('day-list');
+      for (const day of days) {
+        const dayItem = document.createElement('li');
+        dayItem.textContent = day;
+      }
+    </script>
+  </body>
+</html>
