@@ -10,5 +10,25 @@
         <h1>Platform board</h1>
         <p id="train-notice">The 10:15 train to the coast is on time.</p>
         <button id="stand-out-button">Make it stand out</button>
+        <button id="normal-button">Back to normal</button>
+        <script>
+            const trainNotice = document.getElementById('train-notice');
+            const standOutButton = document.getElementById('stand-out-button');
+            const normalButton = document.getElementById('normal-button');
+
+            function makeStandOut() {
+            trainNotice.style.textTransform = 'uppercase';
+            trainNotice.style.letterSpacing = '2px';
+            }
+
+            standOutButton.addEventListener('click', makeStandOut);
+            
+            function makeNormal() {
+                trainNotice.style.textTransform = 'none';
+                trainNotice.style.letterSpacing = 'normal';
+            }
+
+            normalButton.addEventListener('click', makeNormal);
+        </script>
     </body>
 </html>

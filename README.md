@@ -304,9 +304,15 @@ No errors
 
 **The style attribute I saw in the Elements panel:**
 
+After clicking the button, the paragraph had the inline style
+`text-transform: uppercase; letter-spacing: 2px;`.
 
 **What reloading did to it, and why:**
 
+Reloading removed the style attribute and restored the original appearance.
+The click handler changes the element's style in the browser's live DOM; it
+does not change the HTML file. On reload, the browser rebuilds the page from
+the original file, and the style is only applied again if I click the button.
 
 ## canteen-menu.html
 
