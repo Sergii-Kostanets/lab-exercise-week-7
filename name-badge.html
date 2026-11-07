@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Student name: Sergii Kostanets -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Name badge</title>
+    </head>
+    <body>
+        <h1>Name badge</h1>
+        <input type="text" id="badge-name-input">
+        <p id="badge-preview">Name badge:</p>
+        <script>
+            const badgeInput = document.getElementById('badge-name-input');
+            const badgePreview = document.getElementById('badge-preview');
+
+            function updateBadge() {
+                badgePreview.textContent = 'Name badge: ' + badgeInput.value;
+            }
+
+            badgeInput.addEventListener('input', updateBadge);
+        </script>
+    </body>
+</html>

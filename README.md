@@ -222,17 +222,29 @@ showed: `Uncaught TypeError: Cannot read properties of null (reading
 
 **What the total showed before I used `Number`, and why:**
 
+The total treated the input as text instead of a number. For example, entering
+`20` and then `15` would show `Total lengths: 02015`, because `+` concatenated the
+input strings instead of adding their numeric values.
 
 **Why `totalLengths` is declared with `let`, and outside the function:**
 
+It is declared outside `addLengths()` so its value is preserved between
+button clicks. It uses `let` because the total is reassigned whenever lengths
+are added or the log is reset.
 
 **What `Number.isNaN` is for:**
 
+`Number.isNaN(lengthsSwum)` checks whether the input converted to `NaN`
+(“Not-a-Number”), so the page can reject text that is not a valid number.
+The separate empty-string check is needed because `Number('')` is `0`.
 
 ## name-badge.html
 
 **How the `input` event differs from the `click` event:**
 
+The `input` event fires whenever the text in the field changes, so the badge
+preview updates as I type. A `click` event fires when an element is clicked,
+so it would not respond to each change in the text unless I clicked something.
 
 ## Puzzles: my predictions (before opening any page)
 

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Student name: Sergii Kostanets -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Swim lap log</title>
+    </head>
+    <body>
+        <h1>Swim lap log</h1>
+        <label for="lengths-input">Lengths swum in this session</label>
+        <input type="text" id="lengths-input">
+        <button id="add-lengths-button">Add to total</button>
+        <button id="reset-log-button">Reset the log</button>
+        <p id="lengths-total">Total lengths: 0</p>
+        <p id="sessions-total">Sessions logged: 0</p>
+        <p id="lengths-message"></p>
+        <script>
+            const lengthsInput = document.getElementById('lengths-input');
+            const addButton = document.getElementById('add-lengths-button');
+            const totalDisplay = document.getElementById('lengths-total');
+            const messageDisplay = document.getElementById('lengths-message');
+            const sessionsDisplay = document.getElementById('sessions-total');
+            const resetButton = document.getElementById('reset-log-button');
+
+            // The running total, kept between clicks
+            let totalLengths = 0;
+            
+            // Below the first let
+            let sessionsLogged = 0;
+            
+            function addLengths() {
+                // totalLengths = totalLengths + lengthsInput.value;
+                const lengthsSwum = Number(lengthsInput.value);
+                if (lengthsInput.value === '' || Number.isNaN(lengthsSwum)) {
+                    messageDisplay.textContent = 'Please type a number of lengths.';
+                    return;
+                }
+                totalLengths = totalLengths + lengthsSwum;
+                
+                totalDisplay.textContent = 'Total lengths: ' + totalLengths;
+                messageDisplay.textContent = '';
+                lengthsInput.value = '';
+
+                // In addLengths, after a good entry
+                sessionsLogged = sessionsLogged + 1;
+                sessionsDisplay.textContent = 'Sessions logged: ' + sessionsLogged;
+            }
+
+            addButton.addEventListener('click', addLengths);
+            
+            function resetLog() {
+                totalLengths = 0;
+                sessionsLogged = 0;
+                totalDisplay.textContent = 'Total lengths: 0';
+                sessionsDisplay.textContent = 'Sessions logged: 0';
+                messageDisplay.textContent = '';
+            }
+
+            resetButton.addEventListener('click', resetLog);
+        </script>
+    </body>
+</html>
