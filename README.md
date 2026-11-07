@@ -342,22 +342,34 @@ styles is defined in a stylesheet and should be reused or switched as a state.
 ## Puzzles: my predictions (before opening any page)
 
 **Puzzle 1:**
+- Fresh bread today (firebrick and bold)
+- notice urgent
 
 **Puzzle 2:**
+- Fresh bread today (firebrick and bold)
+- notice urgent urgent
 
 **Puzzle 3:**
+- notice
 
 **Puzzle 4:**
+- notice
 
 **Puzzle 5:**
+- false then true
 
 **Puzzle 6:**
+- notice .urgent
 
 **Puzzle 7:**
+- letter-spacing: 3px; background-color: khaki;
 
 **Puzzle 8:**
+- Urgent: true
 
 **For each wrong prediction: what the page showed, and why:**
+**Puzzle 2:**
+- notice urgent (it looks like class added just once and not added if it's already there)
 
 
 ## Tickets: what was wrong, and what I changed
